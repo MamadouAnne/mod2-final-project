@@ -4,7 +4,6 @@ import Movies from "./movies";
 import "../App.css";
 
 class App extends Component {
-  state = {};
   render() {
     return (
       <React.Fragment>
