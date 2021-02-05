@@ -72,6 +72,7 @@ class Movies extends Component {
       <div className="row">
         <div className="col-3">
           <ListGroup
+            style={{ marginTop: 100 }}
             items={this.state.genres}
             selectedItem={this.state.selectedGenre}
             // instead of targeting name and value in our list we can make it more
