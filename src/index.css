@@ -5,10 +5,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 20px 0 0 0;
+  padding: 0 0 0 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.nav {
+  padding-bottom: 30px;
+}
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: lato, sans-serif;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+.header {
+  height: 95vh;
+  /* takes 95% of the element height. */
+  background: -webkit-linear-gradient(
+    left top,
+    rgba(84, 196, 121, 0.01),
+    rgb(40, 180, 133)
+  );
 }

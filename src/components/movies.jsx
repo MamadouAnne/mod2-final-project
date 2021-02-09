@@ -69,7 +69,7 @@ class Movies extends Component {
 
     return (
       // showing the number of movies
-      <div className="row">
+      <div className="row header">
         <div className="col-3">
           <ListGroup
             style={{ marginTop: 100 }}
