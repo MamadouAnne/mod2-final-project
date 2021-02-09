@@ -97,7 +97,7 @@ class Movies extends Component {
             // itemsCount="abc" => index.js:1 Warning: Failed prop type: Invalid prop `itemsCount` of type `string`
             itemsCount={filtered.length} // all filtered items
             //itemsCount={count} // all movies
-            pageSize={pageSize} //  we hard coded 10 to test it.
+            pageSize={pageSize}
             onPageChange={this.handlePageChange}
             currentPage={currentPage}
           />

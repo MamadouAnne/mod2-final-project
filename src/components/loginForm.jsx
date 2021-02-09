@@ -53,7 +53,11 @@ class LoginForm extends Component {
   // destructuring input.name and input.value
   validateProperty = ({ name, value }) => {
     const obj = { [name]: value };
-    Joi.validate(obj, this.schema);
+    const schema = { [name]: this.schema[name] };
+    const { error } = Joi.validate(obj, schema);
+    return error ? error.details[0].message : null;
+    // if (error) return null;
+    // return error.details[0].messaage;
   };
 
   //handleChange = (e) => {
@@ -93,7 +97,9 @@ class LoginForm extends Component {
               error={errors.password}
             />
           </div>
-          <button className="btn btn-primary">Login</button>
+          <button disabled={this.validate()} className="btn btn-primary">
+            Login
+          </button>
         </form>
       </div>
     );
